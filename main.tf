@@ -1,4 +1,4 @@
-resource "google_cloud_run_service" "edemdevsecops1" {
+resource "google_cloud_run_service" "edemdevsecops" {
   name     = "edemdevsecops1"
   location = var.region
 
