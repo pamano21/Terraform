@@ -1,5 +1,5 @@
-resource "google_cloud_run_service" "edemdevsecops1" {
-  name     = "edemdevsecops1"
+resource "google_cloud_run_service" "edemdevsecops" {
+  name     = "edemdevsecops"
   location = var.region
 
   template {
@@ -28,7 +28,7 @@ data "google_iam_policy" "noauth" {
 resource "google_cloud_run_service_iam_policy" "noauth" {
 
   depends_on = [
-    google_cloud_run_service.edemdevsecops1,
+    google_cloud_run_service.edemdevsecops,
   ]
 
   location    = var.region
