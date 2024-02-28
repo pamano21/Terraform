@@ -72,3 +72,5 @@ jobs:
         TF_VAR_zone: ${{ env.ZONE }}
         TF_VAR_service: ${{ env.SERVICE }}
         TF_VAR_image_tag: ${{ env.image_tag }}
+
+      
